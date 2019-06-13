@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+main()
+{
+int number,guess;
+srand(time(NULL));
+number=rand()%2;
+printf(""Guess 1 for tail and 0 for head");
+scanf("%d",&guess);
+printf("Result of coin is\n");
+if(number==0)
+{
+printf("Head\n");
+}
+else
+{
+printf("Tail\n");
+}
+printf("You guessed\n");
+if(guess==0)
+{
+printf("Head\n");
+}
+else
+{
+printf("Tail\n");
+}
+if(number==guess)
+{
+printf("Hey!You won the game");
+}
+else
+{
+printf("Sorry");
+}
+}
